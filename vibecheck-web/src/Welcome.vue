@@ -1,9 +1,17 @@
 <template>
   <div class="center">
     <h1>Hey. How are you feeling today?</h1>
-    <button @click="$emit('done')">Thanks</button>
+    <button @click="handleContinue">Thanks</button>
   </div>
 </template>
+
+<script setup lang="ts">
+const emit = defineEmits<{ (e: 'next'): void }>()
+
+const handleContinue = () => {
+  emit('next')
+}
+</script>
 
 <style scoped>
 .center {
