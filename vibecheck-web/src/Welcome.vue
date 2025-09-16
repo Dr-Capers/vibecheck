@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <h1>Hey. How are you feeling today?</h1>
-    <button @click="$emit('done')">Thanks for asking</button>
+    <button @click="$emit('done')">Thanks</button>
   </div>
 </template>
 
@@ -18,7 +18,7 @@
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #00c896;
+  background-color: #007bff;
   border: none;
   color: white;
   border-radius: 6px;
